@@ -1,0 +1,48 @@
+body {
+    overflow: hidden;  /* Tắt cả thanh cuộn dọc và ngang */
+}
+h1 {
+    position:absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%,-60%);
+    color:rgb(0, 217, 255);
+    font-family: "Ravie Regular";
+    font-size: 5cap;
+    user-select: none;
+    text-shadow: 10px 8px 8px rgba(247, 0, 255, 0.3), 0 0 25px rgba(255, 0, 0, 0.5), 0 0 5px rgba(255, 72, 0, 0.7);
+}
+iframe {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+
+}
+span {
+    background: url(../images/snowflake.png);
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    background-size: cover;
+    pointer-events: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: animation 12s linear;
+    
+}
+
+@keyframes animation {
+    0% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, 4000%);
+        opacity: 0;
+    }
+    
+}
